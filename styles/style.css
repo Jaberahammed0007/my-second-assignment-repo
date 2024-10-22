@@ -292,11 +292,9 @@
 /* BMI Calculator Section */
 .bmi-calculator-section {
     max-width: 1366px;
-    border: 1px solid red;
 }
 .bmi-calculator-header {
     max-width: 75%;
-    border: 1px solid red;
     margin: 0 auto;
 }
 
@@ -307,7 +305,7 @@
     color: rgb(255, 255, 255);
     margin-top: 70px;
     margin-left: 100px;
-    border: 1px solid red;
+
 
 }
 .bmi-calculator-header-description {
@@ -322,13 +320,14 @@
 .bmi-calculation-section {
     max-width: 1366px;
     height: 450px;
-    margin-top: 100px;
-    border: 1px solid red;
+    margin-top: 70px;
+
 }
 .bmi-calculation-container {
     width: 75%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
     margin: 0 auto;
+ 
+
 }
 
             /* Table section */
@@ -336,12 +335,12 @@
 .bmi-calculation-table-title {
     font-size: 1.8rem;
     font-weight: 900;
-    margin-top: 20px;
+    margin-top: 30px;
     color: rgb(255, 255, 255);
 }   
 .bmi-calculation-table {
     margin-top: 30px;
-}        
+} 
 
 th{
     font-size: 1rem;
@@ -356,24 +355,83 @@ td {
     font-weight: 400;
     padding: 10px;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color:rgba(255, 255, 255, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 table {
     border-collapse: collapse;
+    margin-top: 25px;
 }
-.measurement-tile {
+.measurement {
+    width: 60%;
+    margin-left: 10%;
+}
+.measurement-title {
     font-size: 1.8rem;
     font-weight: 900;
-    margin-top: 20px;
+    margin-top: 30px;
     color: rgb(255, 255, 255);
 }
 .measurement-description {
+    width: 80%;
     font-size: .8rem;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 25px;
     color: rgba(255, 255, 255, 0.5);
 }
+.measurement-inputs {
+    margin-top: 30px;
+}
+.height {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px 35px 10px 20px;
+    border: none;
+    border-radius: 8px;
+}
+.weight {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px 35px 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-left: 12px;
+}
+.age {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px 35px 10px 20px;
+    border: none;
+    border-radius: 8px;
+    margin: 12px 12px 12px 0px ;
+}
+.gender {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px 35px 10px 20px;
+    width: 42%;
+    border: none;
+    border-radius: 8px;
+}
+.activity-factor {
+    background-color: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    padding: 10px 35px 10px 20px;
+    width: 86%;
+    border: none;
+    border-radius: 8px;
+}
+
 
 /* Responsive Media Queries */
 
@@ -466,6 +524,96 @@ table {
         object-fit: cover;
         border-radius: 18px;
     }
+    .bmi-calculator-header {
+        max-width: 100%;
+        margin-left: 20px;
+    }
 
+    .bmi-calculator-header-title {
+        font-size: 2rem;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+        margin-top: 70px;  
+        margin-left: 50px;  
+    
+    }
+    .bmi-calculator-header-description {
+        width: 70%;
+        font-size: .8rem;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-top: 15px;
+        margin-left: 50px; 
+    }
+    .bmi-calculation-section {
+        max-width: 1366px;
+        height: 700px;
+        margin-top: 70px;
+    
+    }
+    .bmi-calculation-container {
+        width: 75%;
+        margin: 0 auto;
+        flex-direction: column;
+    
+    }
+    .measurement {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .height {
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+    }
+    .weight {
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        margin-left: 12px;
+    }
+    .age {
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+        width: 80px;
+        height: 30px;
+        border: none;
+        border-radius: 8px;
+        margin: 12px 12px 12px 0px ;
+    }
+    .gender {
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+        width: 137px;
+        height: 50px;
+        border: none;
+        border-radius: 8px;
+    }
+    .activity-factor {
+        background-color: rgba(255, 255, 255, 0.1);
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.6);
+        width: 80%;
+        height: 50px;
+        border: none;
+        border-radius: 8px;
+    }
+    
     }
   }

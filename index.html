@@ -115,11 +115,10 @@
                 </div>
             </div>
             <div class="bmi-calculation-section bg-color3">
-                <div class="bmi-calculation-container">
+                <div class="bmi-calculation-container display-flex">
                     <div class="bmi-calculation-chart">
                         <h3 class="bmi-calculation-table-title">BMI Calculator Chart</h3>
-                        <div class="bmi-calculation-table">
-                            <table>
+                        <table>
                                 <thead>
                                     <th>BMI</th>
                                     <th>Weight Status</th>
@@ -144,18 +143,27 @@
                                 </tbody>
                             </table>
                         </div>
+
                             <div class="measurement">
-                                <h3 class="measurement-tile">Calculate your BMI</h3>
+                                <h3 class="measurement-title">Calculate your BMI</h3>
                                 <p class="measurement-description">
                                     We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. 
                                 </p>
+                                <form class="measurement-inputs">
                                 <input class="height" type="text" placeholder="Height/Cm">
                                 <input class="weight" type="text" placeholder="Weight/Kg">
-
+                                <input class="age" type="text" placeholder="Age">
+                            <select class="gender" name="gender">
+                                <option value="sex">Sex</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                            <select class="activity-factor" name="activity-factor">
+                                <option value="">Select an activity factor</option>
+                            </select>
+                            </form>
                             </div>
                     </div>
-
-                </div>
 
             </div>
         </section>
