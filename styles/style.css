@@ -6,3 +6,66 @@
   font-weight: 400;
   font-style: normal;
 }
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Shared Styles */
+    .display-flex {
+        display: flex;
+    }
+    .color1 {
+        color: #FFFFFF;
+    }
+    .color2 {
+        color: #FFFFFF;
+        opacity: 90%;
+    }
+    .bg-light {
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg,rgb(17, 17, 17) 0%, rgba(37,37,37,1) 50%, rgb(17, 17, 17) 100%);
+    }
+    .nav-items-box{
+        box-sizing: border-box;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 39px;
+        width: 38%;
+        height: 5%;
+        margin-top: 40px;
+    }
+/* Header Styles */
+
+/* navbar related styles */
+.navbar {
+    justify-content: space-between;
+}
+.nav-item {
+    position: relative;
+    list-style: none;
+    margin-top: 8px;
+    margin-right: 40px;
+
+}
+.home-customization {
+  background-color: red;
+  border-radius: 45%;
+  padding: 8px 20px;
+  font-weight: 600;
+}
+.nav-link {
+    text-decoration: none;
+    
+}
+.brand-title {
+    font-size:2rem;
+    font-weight: bolder;
+    color: rgb(230, 83, 60);
+    margin-top: 40px;
+}
+.navbar, .banner {
+    max-width: 1024px;
+    height: 715px;
+    margin: 0 auto;
+}
+
