@@ -684,6 +684,16 @@ table {
         border: none;
         border-radius: 8px;
     }
+    .service-container {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+    .service-container {
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+    }
     
     }
   }
